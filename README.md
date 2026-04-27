@@ -1,21 +1,23 @@
 ````md
-# Talk2Invoice: AI-Powered Voice Assistant for Food Ordering Using Whisper and DistilBERT
+# Talk2Invoice  
+## AI-Powered Voice Assistant for Food Ordering Using Whisper and DistilBERT
 
-## Project Overview
+<p align="center">
 
-Talk2Invoice is an AI-powered voice-based restaurant automation system developed to streamline food ordering, billing, and backend operations in fast-food restaurants, self-service kiosks, airports, metro stations, food courts, and high-traffic service environments.
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![AI Project](https://img.shields.io/badge/AI-Voice%20Ordering-success)
+![NLP](https://img.shields.io/badge/NLP-DistilBERT-orange)
+![Speech Recognition](https://img.shields.io/badge/STT-Faster%20Whisper-red)
+![Deployment](https://img.shields.io/badge/Deployment-HuggingFace-yellow)
+![License](https://img.shields.io/badge/License-Academic-lightgrey)
 
-The system enables customers to place food orders using natural voice commands instead of relying on manual counters or touchscreen systems. It uses OpenAI’s Whisper (Faster-Whisper) for multilingual Speech-to-Text conversion and a fine-tuned DistilBERT model for intent recognition and food entity extraction.
-
-Once the order is captured, the system validates real-time inventory availability, checks kitchen workload, supports secure QR-based payment, and automatically generates digital invoices in PDF and HTML formats. A blockchain-enabled backend ensures transparent transaction logging and secure order records, while the admin dashboard provides business analytics, stock monitoring, and operational visibility.
-
-Talk2Invoice improves service speed, reduces human error, minimizes waiting time, and creates a modern contactless food ordering experience suitable for real-world restaurant deployment.
+</p>
 
 ---
 
-## Live Deployment
+# Live Demo
 
-### Hugging Face Space
+### Hugging Face Deployment
 
 https://huggingface.co/spaces/sailubandi/t2v
 
@@ -25,70 +27,176 @@ https://github.com/sailubandi/t2v
 
 ---
 
-## Abstract
+# Table of Contents
 
-Artificial Intelligence is increasingly being adopted in fast-food service environments to improve customer experience and operational efficiency. Traditional ordering systems often result in long queues, incorrect orders, billing errors, and reduced productivity during peak hours.
-
-Talk2Invoice addresses these challenges through an AI-driven voice assistant that enables contactless food ordering using natural speech. Multilingual voice input is converted into text using Whisper, while customer intent and item details are identified using a fine-tuned DistilBERT model. QR code-based menu access simplifies interactions, and a blockchain-enabled backend supports real-time stock management, secure digital transactions, and automated invoice generation.
-
-The system demonstrates improved order accuracy, reduced latency, and better transparency in restaurant operations by combining speech processing, NLP, backend automation, and secure transaction handling.
+- Project Overview
+- Abstract
+- Problem Statement
+- Why This Project Matters
+- Business Use Cases
+- Key Features
+- Technology Stack
+- System Workflow
+- Installation Guide
+- Sample Voice Commands
+- Model Training and Evaluation
+- Testing Strategy
+- Deployment
+- Screenshots
+- Future Scope
+- Authors
+- Conclusion
+- Contact
+- License
 
 ---
 
-## Problem Statement
+# Project Overview
 
-In fast-food places such as restaurants, kiosks, airports, and metro stations, customers frequently experience delays and confusion while placing orders using manual or touchscreen systems.
+Talk2Invoice is an AI-powered voice-based restaurant automation system developed to streamline food ordering, billing, inventory validation, and backend operations for fast-food restaurants, food courts, self-service kiosks, airports, metro stations, and high-traffic service environments.
 
-Existing systems suffer from:
+The system enables customers to place food orders using natural voice commands instead of relying on manual counters or touchscreen systems.
+
+It uses:
+
+- OpenAI Whisper (Faster-Whisper) for multilingual Speech-to-Text conversion
+- Fine-tuned DistilBERT for intent recognition and food entity extraction
+- Blockchain-based transaction logging for secure invoice generation
+- Admin dashboard for analytics, monitoring, and business visibility
+
+Once the order is captured, the system validates real-time inventory availability, checks kitchen workload, processes secure QR-based payment, and automatically generates digital invoices in PDF and HTML formats.
+
+Talk2Invoice improves service speed, reduces human errors, minimizes waiting time, and creates a modern contactless food ordering experience suitable for real-world restaurant deployment.
+
+---
+
+# Abstract
+
+Artificial Intelligence is increasingly being adopted in fast-food service environments to improve customer experience and operational efficiency.
+
+Traditional ordering systems often result in:
+
+- Long queues
+- Incorrect orders
+- Billing errors
+- Delayed service during peak hours
+- Staff dependency
+- Poor customer satisfaction
+
+Talk2Invoice addresses these challenges using an AI-driven voice assistant that enables contactless food ordering through natural speech interaction.
+
+Multilingual voice input is converted into text using Whisper, while customer intent and food item extraction are handled using a fine-tuned DistilBERT model.
+
+QR code-based menu access simplifies ordering, while blockchain-enabled backend services support:
+
+- Real-time stock management
+- Secure digital transactions
+- Automated invoice generation
+- Revenue reporting
+- Business analytics
+
+This project demonstrates improved order accuracy, reduced latency, and better operational transparency by combining AI, NLP, speech processing, backend automation, and secure transaction handling.
+
+---
+
+# Problem Statement
+
+In restaurants, food courts, airports, and kiosks, customers frequently face delays and confusion while placing food orders using traditional systems.
+
+Existing problems include:
 
 - Long waiting queues
 - Incorrect order placement
-- Slow service during peak hours
+- Slow service during rush hours
 - Billing mistakes
 - Limited multilingual support
 - Poor voice recognition in noisy environments
-- Lack of backend integration with inventory and billing systems
+- Lack of integration with inventory and billing systems
 
-Most existing voice assistants cannot accurately understand natural speech in real-world restaurant environments and are not connected to inventory validation or automated invoice generation.
+Most existing voice assistants fail because they cannot accurately understand natural speech in real-world restaurant environments and are not connected to backend operational systems.
 
-To solve these issues, there is a need for an intelligent voice-based ordering system that can process natural speech, understand customer intent, validate orders in real time, and generate digital invoices automatically.
+There is a strong need for an intelligent voice-based ordering system that can:
 
-Talk2Invoice is developed to provide this complete AI-powered solution.
+- Understand customer intent
+- Validate inventory in real time
+- Reduce ordering errors
+- Generate digital invoices automatically
+- Improve service efficiency
 
----
-
-## Project Objectives
-
-- Develop a voice-based food ordering assistant for restaurants
-- Enable multilingual real-time Speech-to-Text conversion
-- Improve order accuracy using Natural Language Processing
-- Reduce customer waiting time and manual dependency
-- Automate billing and invoice generation
-- Improve inventory visibility and kitchen load management
-- Provide business analytics through an admin dashboard
-- Ensure secure and transparent transaction handling using blockchain simulation
+Talk2Invoice is built to solve this complete problem.
 
 ---
 
-## Key Features
+# Why This Project Matters
 
-## Customer Features
+The food service industry is rapidly moving toward:
+
+- Contactless ordering
+- Smart automation
+- AI-powered customer service
+- Faster operations
+- Reduced manual dependency
+
+Talk2Invoice helps restaurants modernize operations while improving both customer satisfaction and business profitability.
+
+This project is highly relevant for:
+
+- Smart Restaurants
+- Airport Food Kiosks
+- Metro Station Food Counters
+- Mall Food Courts
+- Self-Service Restaurant Chains
+- Automated Cafeterias
+
+---
+
+# Business Use Cases
+
+## Fast Food Chains
+
+Automated voice ordering reduces rush-hour delays.
+
+## Airport Food Counters
+
+Quick service for high-volume customer environments.
+
+## Metro Station Kiosks
+
+Low-latency ordering with minimal staff dependency.
+
+## College Cafeterias
+
+Self-service voice ordering with digital billing.
+
+## Cloud Kitchens
+
+Automated order intake and smart invoice generation.
+
+## Smart Restaurants
+
+AI-powered operational analytics and customer service.
+
+---
+
+# Key Features
+
+# Customer Features
 
 - Voice-based food ordering
 - Multilingual speech recognition
-- Real-time speech-to-text conversion
+- Real-time Speech-to-Text conversion
 - QR code-based menu access
 - Natural language order placement
 - Live order confirmation
 - Cart review and modification
-- Secure digital payment support
+- Secure digital payment
 - Automatic invoice generation
 - PDF and HTML invoice download
-- Contactless self-service ordering experience
+- Contactless ordering experience
 
 ---
 
-## Admin Features
+# Admin Features
 
 - Real-time inventory management
 - Kitchen workload balancing
@@ -102,15 +210,15 @@ Talk2Invoice is developed to provide this complete AI-powered solution.
 
 ---
 
-## Technology Stack
+# Technology Stack
 
-## Programming Language
+# Programming Language
 
 - Python
 
 ---
 
-## Machine Learning and Artificial Intelligence
+# Machine Learning and AI
 
 - OpenAI Whisper
 - Faster-Whisper
@@ -121,7 +229,7 @@ Talk2Invoice is developed to provide this complete AI-powered solution.
 
 ---
 
-## Natural Language Processing and Speech Processing
+# NLP and Speech Processing
 
 - Speech-to-Text (STT)
 - Text-to-Speech (gTTS)
@@ -130,7 +238,7 @@ Talk2Invoice is developed to provide this complete AI-powered solution.
 
 ---
 
-## Backend and System Integration
+# Backend and Integration
 
 - Gradio
 - FastAPI
@@ -140,7 +248,7 @@ Talk2Invoice is developed to provide this complete AI-powered solution.
 
 ---
 
-## Data Processing and Analytics
+# Data Processing and Analytics
 
 - Pandas
 - NumPy
@@ -150,31 +258,31 @@ Talk2Invoice is developed to provide this complete AI-powered solution.
 
 ---
 
-## Security and Blockchain
+# Security and Blockchain
 
 - Blockchain Transaction Simulation
 - Web3.py
 
 ---
 
-## Deployment and Version Control
+# Deployment
 
 - GitHub
 - Hugging Face Spaces
 
 ---
 
-## System Workflow
+# System Workflow
 
 ## Step 1: QR Code-Based Menu Access
 
-The customer scans the restaurant QR code and opens the digital menu interface through the browser without requiring mobile app installation.
+Customer scans the QR code and opens the digital restaurant menu through the browser without needing mobile app installation.
 
 ---
 
 ## Step 2: Voice Input Collection
 
-The customer places an order using natural speech.
+Customer places an order using natural speech.
 
 Example:
 
@@ -184,13 +292,13 @@ Example:
 
 ## Step 3: Speech-to-Text Conversion
 
-The Faster-Whisper model converts multilingual voice input into text accurately, even in noisy restaurant environments.
+Faster-Whisper converts multilingual voice input into text accurately, even in noisy restaurant environments.
 
 ---
 
 ## Step 4: Intent Recognition
 
-The fine-tuned DistilBERT model identifies:
+DistilBERT identifies:
 
 - Food item names
 - Quantity
@@ -214,19 +322,19 @@ The system verifies:
 - Stock levels
 - Kitchen workload status
 
-If an item is unavailable, suitable alternatives are suggested.
+If unavailable, suitable alternatives are suggested.
 
 ---
 
 ## Step 6: Order Confirmation
 
-The system confirms the detected order with the customer before final processing.
+The system confirms the detected order before final processing.
 
 ---
 
 ## Step 7: Secure Payment Processing
 
-The customer completes QR-based secure digital payment.
+Customer completes QR-based secure digital payment.
 
 ---
 
@@ -247,7 +355,7 @@ Invoice delivery methods:
 
 ## Step 9: Admin Monitoring and Analytics
 
-The owner dashboard provides:
+Owner dashboard provides:
 
 - Revenue reports
 - Order tracking
@@ -256,20 +364,18 @@ The owner dashboard provides:
 - Daily business insights
 - Blockchain transaction records
 
+---
 
+# Installation Guide
 
-## Installation Guide
-
-## Step 1: Clone the Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/sailubandi/t2v.git
 cd t2v
-```
+````
 
----
-
-## Step 2: Create Virtual Environment
+## Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -282,37 +388,29 @@ For Windows:
 venv\Scripts\activate
 ```
 
----
-
-## Step 3: Install Required Dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+## Install FFmpeg
 
-## Step 4: Install FFmpeg
-
-FFmpeg is required for Faster-Whisper audio processing.
+Required for Faster-Whisper audio processing.
 
 Download:
 
 https://ffmpeg.org/download.html
 
----
+## Setup Environment Variables
 
-## Step 5: Configure Environment Variables
-
-Create a `.env` file in the project root:
+Create `.env`
 
 ```env
 GEMINI_API_KEY=your_api_key_here
 ```
 
----
-
-## Step 6: Run the Application
+## Run Application
 
 ```bash
 python app.py
@@ -320,58 +418,13 @@ python app.py
 
 ---
 
-## Sample Voice Commands
+# Model Performance
 
-### Add Order
+## DistilBERT Intent Recognition
 
-* Add one burger
-* I want two pizzas
-* Add three cold drinks
+### Final Validation Accuracy
 
-### Remove Order
-
-* Remove one burger
-* Cancel fries
-
-### Finalize Order
-
-* Finalize my order
-* Confirm order
-
-### Invoice Commands
-
-* Generate invoice
-* Show my bill
-
-### General Queries
-
-* What are today’s special items?
-* Suggest available alternatives
-* What is the price of pizza?
-
----
-
-## Model Training and Evaluation
-
-## DistilBERT Intent Recognition Model
-
-The intent recognition system is built using a fine-tuned DistilBERT model trained on restaurant order datasets and customer conversational utterances.
-
-### Training Configuration
-
-* Batch Size: 32
-* Optimizer: AdamW
-* Learning Rate: 2e-5 to 5e-5
-* Early Stopping: Enabled
-
-### Evaluation Metrics
-
-* Validation Accuracy
-* Macro F1 Score
-
-### Final Performance
-
-Validation Accuracy: **96.3%**
+# 96.3%
 
 This ensures strong performance in:
 
@@ -382,74 +435,10 @@ This ensures strong performance in:
 
 ---
 
-## Testing Strategy
-
-The project includes:
-
-## Unit Testing
-
-* Menu search validation
-* Item mapping verification
-* Invoice generation testing
-* Order management validation
-
----
-
-## Integration Testing
-
-* Speech-to-Text testing
-* Gemini command processing
-* Text-to-Speech validation
-* Language switching validation
-
----
-
-## UI Flow Testing
-
-* Customer login flow
-* Order placement
-* Payment completion
-* Invoice download
-
----
-
-## Scenario Testing
-
-* Out-of-stock item handling
-* Multilingual order placement
-* Admin analytics verification
-* Real-world restaurant order simulation
-
----
-
-## Deployment
-
-Talk2Invoice is deployed using Hugging Face Spaces.
-
-### Advantages of Deployment
-
-* Easy cloud hosting
-* Automatic GitHub integration
-* CPU and GPU runtime support
-* Real-time model inference
-* Simplified CI/CD workflow
-
-### Continuous Integration and Deployment
-
-Whenever code is pushed to GitHub:
-
-* Automatic rebuild starts
-* Latest version gets deployed
-* No manual deployment required
-
-This ensures a stable and production-ready deployment workflow.
-
----
-
-## Future Scope
+# Future Scope
 
 * Offline mode support
-* Emotion detection from customer voice
+* Emotion detection from voice
 * Swiggy integration
 * Zomato integration
 * AI-powered customer feedback analysis
@@ -460,7 +449,7 @@ This ensures a stable and production-ready deployment workflow.
 
 ---
 
-## Authors
+# Authors
 
 ## Project Lead
 
@@ -471,13 +460,25 @@ Sri Vasavi Engineering College
 
 ---
 
+# Contact
 
+### LinkedIn
+
+https://linkedin.com/in/sailubandi
+
+### GitHub
+
+https://github.com/sailubandi
+
+### Email
+
+[sailubandi33@gmail.com](mailto:sailubandi33@gmail.com)
 
 ---
 
-## Conclusion
+# Conclusion
 
-Talk2Invoice is a complete AI-powered restaurant automation system that combines:
+Talk2Invoice is a complete AI-powered restaurant automation platform that combines:
 
 * Voice Recognition
 * Natural Language Processing
@@ -486,15 +487,15 @@ Talk2Invoice is a complete AI-powered restaurant automation system that combines
 * Blockchain Security
 * Admin Analytics
 
-into one unified intelligent platform.
+into one intelligent unified system.
 
-The system improves service speed, reduces manual errors, minimizes staff dependency, and delivers a seamless customer experience for modern restaurants and self-service environments.
+It improves service speed, reduces manual errors, minimizes staff dependency, and delivers a seamless customer experience for modern restaurants and self-service environments.
 
-It demonstrates how Artificial Intelligence can transform traditional restaurant operations into scalable, smart, and future-ready digital food service systems.
+This project demonstrates how Artificial Intelligence can transform traditional restaurant operations into scalable, smart, and future-ready digital food service systems.
 
 ---
 
-## License
+# License
 
 This project is developed for:
 
