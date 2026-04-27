@@ -2,16 +2,6 @@
 # Talk2Invoice  
 ## AI-Powered Voice Assistant for Food Ordering Using Whisper and DistilBERT
 
-<p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![AI Project](https://img.shields.io/badge/AI-Voice%20Ordering-success)
-![NLP](https://img.shields.io/badge/NLP-DistilBERT-orange)
-![Speech Recognition](https://img.shields.io/badge/STT-Faster%20Whisper-red)
-![Deployment](https://img.shields.io/badge/Deployment-HuggingFace-yellow)
-![License](https://img.shields.io/badge/License-Academic-lightgrey)
-
-</p>
 
 ---
 
