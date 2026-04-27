@@ -1,11 +1,21 @@
 ````md
 # Talk2Invoice  
-## AI-Powered Voice Assistant for Food Ordering Using Whisper and DistilBERT
+### AI-Powered Voice Assistant for Food Ordering Using Whisper and DistilBERT
 
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![AI Project](https://img.shields.io/badge/AI-Voice%20Ordering-success)
+![NLP](https://img.shields.io/badge/NLP-DistilBERT-orange)
+![Speech Recognition](https://img.shields.io/badge/STT-Faster%20Whisper-red)
+![Deployment](https://img.shields.io/badge/Deployment-HuggingFace-yellow)
+![License](https://img.shields.io/badge/License-Academic-lightgrey)
+
+</p>
 
 ---
 
-# Live Demo
+## 🚀 Live Demo
 
 ### Hugging Face Deployment
 
@@ -17,7 +27,7 @@ https://github.com/sailubandi/t2v
 
 ---
 
-# Table of Contents
+## 📚 Table of Contents
 
 - Project Overview
 - Abstract
@@ -32,35 +42,34 @@ https://github.com/sailubandi/t2v
 - Model Training and Evaluation
 - Testing Strategy
 - Deployment
-- Screenshots
 - Future Scope
 - Authors
-- Conclusion
 - Contact
+- Conclusion
 - License
 
 ---
 
-# Project Overview
+## 📌 Project Overview
 
-Talk2Invoice is an AI-powered voice-based restaurant automation system developed to streamline food ordering, billing, inventory validation, and backend operations for fast-food restaurants, food courts, self-service kiosks, airports, metro stations, and high-traffic service environments.
+Talk2Invoice is an AI-powered voice-based restaurant automation system developed to streamline food ordering, billing, inventory validation, and backend operations for fast-food restaurants, food courts, self-service kiosks, airports, metro stations, and other high-traffic service environments.
 
 The system enables customers to place food orders using natural voice commands instead of relying on manual counters or touchscreen systems.
 
 It uses:
 
-- OpenAI Whisper (Faster-Whisper) for multilingual Speech-to-Text conversion
-- Fine-tuned DistilBERT for intent recognition and food entity extraction
-- Blockchain-based transaction logging for secure invoice generation
-- Admin dashboard for analytics, monitoring, and business visibility
+- **OpenAI Whisper (Faster-Whisper)** for multilingual Speech-to-Text conversion
+- **Fine-tuned DistilBERT** for intent recognition and food entity extraction
+- **Blockchain-based transaction logging** for secure invoice generation
+- **Admin Dashboard** for analytics, monitoring, and business visibility
 
-Once the order is captured, the system validates real-time inventory availability, checks kitchen workload, processes secure QR-based payment, and automatically generates digital invoices in PDF and HTML formats.
+Once the order is captured, the system validates real-time inventory availability, checks kitchen workload, processes secure QR-based payment, and automatically generates digital invoices in both PDF and HTML formats.
 
 Talk2Invoice improves service speed, reduces human errors, minimizes waiting time, and creates a modern contactless food ordering experience suitable for real-world restaurant deployment.
 
 ---
 
-# Abstract
+## 🧠 Abstract
 
 Artificial Intelligence is increasingly being adopted in fast-food service environments to improve customer experience and operational efficiency.
 
@@ -89,11 +98,11 @@ This project demonstrates improved order accuracy, reduced latency, and better o
 
 ---
 
-# Problem Statement
+## ❗ Problem Statement
 
 In restaurants, food courts, airports, and kiosks, customers frequently face delays and confusion while placing food orders using traditional systems.
 
-Existing problems include:
+### Existing Problems
 
 - Long waiting queues
 - Incorrect order placement
@@ -117,7 +126,7 @@ Talk2Invoice is built to solve this complete problem.
 
 ---
 
-# Why This Project Matters
+## ⭐ Why This Project Matters
 
 The food service industry is rapidly moving toward:
 
@@ -129,7 +138,7 @@ The food service industry is rapidly moving toward:
 
 Talk2Invoice helps restaurants modernize operations while improving both customer satisfaction and business profitability.
 
-This project is highly relevant for:
+### Highly Relevant For
 
 - Smart Restaurants
 - Airport Food Kiosks
@@ -140,37 +149,37 @@ This project is highly relevant for:
 
 ---
 
-# Business Use Cases
+## 🏢 Business Use Cases
 
-## Fast Food Chains
+### Fast Food Chains
 
 Automated voice ordering reduces rush-hour delays.
 
-## Airport Food Counters
+### Airport Food Counters
 
 Quick service for high-volume customer environments.
 
-## Metro Station Kiosks
+### Metro Station Kiosks
 
 Low-latency ordering with minimal staff dependency.
 
-## College Cafeterias
+### College Cafeterias
 
 Self-service voice ordering with digital billing.
 
-## Cloud Kitchens
+### Cloud Kitchens
 
 Automated order intake and smart invoice generation.
 
-## Smart Restaurants
+### Smart Restaurants
 
 AI-powered operational analytics and customer service.
 
 ---
 
-# Key Features
+## ✨ Key Features
 
-# Customer Features
+### Customer Features
 
 - Voice-based food ordering
 - Multilingual speech recognition
@@ -186,7 +195,7 @@ AI-powered operational analytics and customer service.
 
 ---
 
-# Admin Features
+### Admin Features
 
 - Real-time inventory management
 - Kitchen workload balancing
@@ -200,15 +209,13 @@ AI-powered operational analytics and customer service.
 
 ---
 
-# Technology Stack
+## 🛠 Technology Stack
 
-# Programming Language
+### Programming Language
 
 - Python
 
----
-
-# Machine Learning and AI
+### Machine Learning and AI
 
 - OpenAI Whisper
 - Faster-Whisper
@@ -217,18 +224,14 @@ AI-powered operational analytics and customer service.
 - PyTorch
 - Scikit-learn
 
----
-
-# NLP and Speech Processing
+### NLP and Speech Processing
 
 - Speech-to-Text (STT)
 - Text-to-Speech (gTTS)
 - Google Gemini API
 - Intent Recognition Pipeline
 
----
-
-# Backend and Integration
+### Backend and Integration
 
 - Gradio
 - FastAPI
@@ -236,9 +239,7 @@ AI-powered operational analytics and customer service.
 - MongoDB
 - JSON-based Persistent Storage
 
----
-
-# Data Processing and Analytics
+### Data Processing and Analytics
 
 - Pandas
 - NumPy
@@ -246,47 +247,43 @@ AI-powered operational analytics and customer service.
 - Plotly
 - ReportLab
 
----
-
-# Security and Blockchain
+### Security and Blockchain
 
 - Blockchain Transaction Simulation
 - Web3.py
 
----
-
-# Deployment
+### Deployment
 
 - GitHub
 - Hugging Face Spaces
 
 ---
 
-# System Workflow
+## 🔄 System Workflow
 
-## Step 1: QR Code-Based Menu Access
+### Step 1: QR Code-Based Menu Access
 
 Customer scans the QR code and opens the digital restaurant menu through the browser without needing mobile app installation.
 
 ---
 
-## Step 2: Voice Input Collection
+### Step 2: Voice Input Collection
 
 Customer places an order using natural speech.
 
-Example:
+**Example:**
 
-"I want one pizza and two cold drinks"
+> “I want one pizza and two cold drinks”
 
 ---
 
-## Step 3: Speech-to-Text Conversion
+### Step 3: Speech-to-Text Conversion
 
 Faster-Whisper converts multilingual voice input into text accurately, even in noisy restaurant environments.
 
 ---
 
-## Step 4: Intent Recognition
+### Step 4: Intent Recognition
 
 DistilBERT identifies:
 
@@ -304,7 +301,7 @@ Examples:
 
 ---
 
-## Step 5: Inventory and Kitchen Load Validation
+### Step 5: Inventory and Kitchen Load Validation
 
 The system verifies:
 
@@ -316,19 +313,19 @@ If unavailable, suitable alternatives are suggested.
 
 ---
 
-## Step 6: Order Confirmation
+### Step 6: Order Confirmation
 
 The system confirms the detected order before final processing.
 
 ---
 
-## Step 7: Secure Payment Processing
+### Step 7: Secure Payment Processing
 
 Customer completes QR-based secure digital payment.
 
 ---
 
-## Step 8: Invoice Generation
+### Step 8: Invoice Generation
 
 The system automatically generates:
 
@@ -337,13 +334,13 @@ The system automatically generates:
 
 Invoice delivery methods:
 
-- QR code
+- QR Code
 - Email
-- Download option
+- Download Option
 
 ---
 
-## Step 9: Admin Monitoring and Analytics
+### Step 9: Admin Monitoring and Analytics
 
 Owner dashboard provides:
 
@@ -356,16 +353,16 @@ Owner dashboard provides:
 
 ---
 
-# Installation Guide
+## ⚙ Installation Guide
 
-## Clone Repository
+### Step 1: Clone Repository
 
 ```bash
 git clone https://github.com/sailubandi/t2v.git
 cd t2v
 ````
 
-## Create Virtual Environment
+### Step 2: Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -378,29 +375,29 @@ For Windows:
 venv\Scripts\activate
 ```
 
-## Install Dependencies
+### Step 3: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Install FFmpeg
+### Step 4: Install FFmpeg
 
 Required for Faster-Whisper audio processing.
 
-Download:
+Download from:
 
 https://ffmpeg.org/download.html
 
-## Setup Environment Variables
+### Step 5: Setup Environment Variables
 
-Create `.env`
+Create a `.env` file
 
 ```env
 GEMINI_API_KEY=your_api_key_here
 ```
 
-## Run Application
+### Step 6: Run Application
 
 ```bash
 python app.py
@@ -408,13 +405,58 @@ python app.py
 
 ---
 
-# Model Performance
+## 🎤 Sample Voice Commands
 
-## DistilBERT Intent Recognition
+### Add Order
 
-### Final Validation Accuracy
+* Add one burger
+* I want two pizzas
+* Add three cold drinks
 
-# 96.3%
+### Remove Order
+
+* Remove one burger
+* Cancel fries
+
+### Finalize Order
+
+* Finalize my order
+* Confirm order
+
+### Invoice Commands
+
+* Generate invoice
+* Show my bill
+
+### General Queries
+
+* What are today’s special items?
+* Suggest available alternatives
+* What is the price of pizza?
+
+---
+
+## 📈 Model Training and Evaluation
+
+### DistilBERT Intent Recognition Model
+
+The intent recognition system is built using a fine-tuned DistilBERT model trained on restaurant order datasets and customer conversational utterances.
+
+### Training Configuration
+
+* Batch Size: 32
+* Optimizer: AdamW
+* Learning Rate: 2e-5 to 5e-5
+* Early Stopping: Enabled
+
+### Evaluation Metrics
+
+* Validation Accuracy
+* Macro F1 Score
+
+### Final Performance
+
+## Validation Accuracy: **96.3%**
 
 This ensures strong performance in:
 
@@ -425,10 +467,66 @@ This ensures strong performance in:
 
 ---
 
-# Future Scope
+## 🧪 Testing Strategy
+
+### Unit Testing
+
+* Menu search validation
+* Item mapping verification
+* Invoice generation testing
+* Order management validation
+
+### Integration Testing
+
+* Speech-to-Text testing
+* Gemini command processing
+* Text-to-Speech validation
+* Language switching validation
+
+### UI Flow Testing
+
+* Customer login flow
+* Order placement
+* Payment completion
+* Invoice download
+
+### Scenario Testing
+
+* Out-of-stock item handling
+* Multilingual order placement
+* Admin analytics verification
+* Real-world restaurant order simulation
+
+---
+
+## ☁ Deployment
+
+Talk2Invoice is deployed using Hugging Face Spaces.
+
+### Advantages of Deployment
+
+* Easy cloud hosting
+* Automatic GitHub integration
+* CPU and GPU runtime support
+* Real-time model inference
+* Simplified CI/CD workflow
+
+### Continuous Integration and Deployment
+
+Whenever code is pushed to GitHub:
+
+* Automatic rebuild starts
+* Latest version gets deployed
+* No manual deployment required
+
+This ensures a stable and production-ready deployment workflow.
+
+---
+
+## 🔮 Future Scope
 
 * Offline mode support
-* Emotion detection from voice
+* Emotion detection from customer voice
 * Swiggy integration
 * Zomato integration
 * AI-powered customer feedback analysis
@@ -439,18 +537,18 @@ This ensures strong performance in:
 
 ---
 
-# Authors
+## 👩‍💻 Authors
 
-## Project Lead
+### Project Lead
 
-### Bandi Poorna Sri Sailaja
+**Bandi Poorna Sri Sailaja**
 
 B.Tech – Artificial Intelligence and Machine Learning
 Sri Vasavi Engineering College
 
 ---
 
-# Contact
+## 📬 Contact
 
 ### LinkedIn
 
@@ -466,7 +564,7 @@ https://github.com/sailubandi
 
 ---
 
-# Conclusion
+## 🏁 Conclusion
 
 Talk2Invoice is a complete AI-powered restaurant automation platform that combines:
 
@@ -485,7 +583,7 @@ This project demonstrates how Artificial Intelligence can transform traditional 
 
 ---
 
-# License
+## 📄 License
 
 This project is developed for:
 
