@@ -256,47 +256,7 @@ The owner dashboard provides:
 - Daily business insights
 - Blockchain transaction records
 
----
 
-## Project Structure
-
-```bash
-t2v/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── models/
-│   ├── distilbert_model/
-│   └── whisper_model/
-│
-├── invoices/
-│   ├── pdf/
-│   └── html/
-│
-├── data/
-│   ├── menu_data.json
-│   ├── all_orders.json
-│   ├── daily_reports/
-│   └── inventory.json
-│
-├── blockchain/
-│   └── transaction_logs.py
-│
-├── analytics/
-│   └── revenue_dashboard.py
-│
-├── assets/
-│   └── screenshots/
-│
-└── utils/
-    ├── speech_processing.py
-    ├── invoice_generator.py
-    └── order_manager.py
-````
-
----
 
 ## Installation Guide
 
