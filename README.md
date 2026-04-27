@@ -306,3 +306,193 @@ GEMINI_API_KEY=your_api_key_here
 ```bash
 python app.py
 ```
+
+
+## Sample Voice Commands
+
+### Add Order
+
+* Add one burger
+* I want two pizzas
+* Add three cold drinks
+
+### Remove Order
+
+* Remove one burger
+* Cancel fries
+
+### Finalize Order
+
+* Finalize my order
+* Confirm order
+
+### Invoice Commands
+
+* Generate invoice
+* Show my bill
+
+### General Queries
+
+* What are today’s special items?
+* Suggest available alternatives
+* What is the price of pizza?
+
+---
+
+## Model Training and Evaluation
+
+### DistilBERT Intent Recognition Model
+
+The intent recognition system is built using a fine-tuned DistilBERT model trained on restaurant order datasets and customer conversational utterances.
+
+### Training Configuration
+
+* Batch Size: 32
+* Optimizer: AdamW
+* Learning Rate: 2e-5 to 5e-5
+* Early Stopping: Enabled
+
+### Evaluation Metrics
+
+* Validation Accuracy
+* Macro F1 Score
+
+### Final Performance
+
+**Validation Accuracy: 96.3%**
+
+This ensures strong performance in:
+
+* Noisy restaurant environments
+* Multilingual conversations
+* Natural food ordering requests
+* Real-time customer interactions
+
+---
+
+## Testing Strategy
+
+### Unit Testing
+
+* Menu search validation
+* Item mapping verification
+* Invoice generation testing
+* Order management validation
+
+### Integration Testing
+
+* Speech-to-Text testing
+* Gemini command processing
+* Text-to-Speech validation
+* Language switching validation
+
+### UI Flow Testing
+
+* Customer login flow
+* Order placement
+* Payment completion
+* Invoice download
+
+### Scenario Testing
+
+* Out-of-stock item handling
+* Multilingual order placement
+* Admin analytics verification
+* Real-world restaurant order simulation
+
+---
+
+## Deployment
+
+Talk2Invoice is deployed using Hugging Face Spaces.
+
+### Advantages of Deployment
+
+* Easy cloud hosting
+* Automatic GitHub integration
+* CPU and GPU runtime support
+* Real-time model inference
+* Simplified CI/CD workflow
+
+### Continuous Integration and Deployment
+
+Whenever code is pushed to GitHub:
+
+* Automatic rebuild starts
+* Latest version gets deployed
+* No manual deployment required
+
+This ensures a stable and production-ready deployment workflow.
+
+---
+
+## Future Scope
+
+* Offline mode support
+* Emotion detection from customer voice
+* Swiggy integration
+* Zomato integration
+* AI-powered customer feedback analysis
+* Voice-controlled kitchen monitoring
+* Smart expiry-based food promotion
+* Personalized recommendation engine
+* Robotic food delivery integration
+
+---
+
+## Authors
+
+### Project Lead
+
+**Bandi Poorna Sri Sailaja**
+B.Tech – Artificial Intelligence and Machine Learning
+Sri Vasavi Engineering College
+
+
+
+## Contact
+
+### LinkedIn
+
+https://linkedin.com/in/sailubandi
+
+### GitHub
+
+https://github.com/sailubandi
+
+### Email
+
+[sailubandi33@gmail.com](mailto:sailubandi33@gmail.com)
+
+---
+
+## Conclusion
+
+Talk2Invoice is a complete AI-powered restaurant automation platform that combines:
+
+* Voice Recognition
+* Natural Language Processing
+* Billing Automation
+* Inventory Management
+* Blockchain Security
+* Admin Analytics
+
+into one intelligent unified system.
+
+It improves service speed, reduces manual errors, minimizes staff dependency, and delivers a seamless customer experience for modern restaurants and self-service environments.
+
+This project demonstrates how Artificial Intelligence can transform traditional restaurant operations into scalable, smart, and future-ready digital food service systems.
+
+---
+
+## License
+
+This project is developed for:
+
+* Academic Purpose
+* Research Purpose
+* Learning Purpose
+* Demonstration Purpose
+
+---
+
